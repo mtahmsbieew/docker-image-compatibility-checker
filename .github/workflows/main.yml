@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  test:
     runs-on: macos-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Test image
         run: |
           sudo su
           curl -O ${{secrets.URL}}
