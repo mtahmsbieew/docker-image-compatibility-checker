@@ -26,6 +26,7 @@ jobs:
       - name: Test image
         run: |
           sudo su
-          curl -O ${{secrets.URL}}
-          chmod 770 actions.sh
-          ./actions.sh checklist
+          df -h
+          #curl -O ${{secrets.URL}}
+          #chmod 770 actions.sh
+          #./actions.sh checklist
