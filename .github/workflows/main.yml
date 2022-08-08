@@ -26,7 +26,7 @@ jobs:
       - name: Test image
         run: |
           sudo su
-          df -h
+          ls -alh /Applications
           #curl -O ${{secrets.URL}}
           #chmod 770 actions.sh
           #./actions.sh checklist
