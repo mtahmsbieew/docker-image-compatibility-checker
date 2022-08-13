@@ -1,2 +1,3 @@
 https://hub.docker.com/r/rancher/nginx
 https://hub.docker.com/r/hashicorp/postgres-nomad-demo
+https://hub.docker.com/r/cockroachdb/builder
